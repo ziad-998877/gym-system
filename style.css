@@ -1,0 +1,52 @@
+/* Simple login page styles */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #eef1f4;
+  color: #10161d;
+}
+
+main {
+  max-width: 380px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #cfd6dd;
+  border-radius: 6px;
+  padding: 1.2rem;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #cfd6dd;
+  border-radius: 4px;
+  font: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background: #3a3af0;
+  color: #fff;
+  border: 0;
+  padding: 0.55rem 1rem;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.error {
+  background: #fff3cd;
+  border-left: 4px solid #ffb703;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+}
