@@ -1,63 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IronFit Gym | Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <main class="page">
+    <section class="hero" aria-hidden="true">
+      <div class="hero-overlay">
+        <h1 class="brand">IRON<span>FIT</span></h1>
+        <p class="tagline">Train hard. Stay consistent. Become unstoppable.</p>
+        <ul class="perks">
+          <li>Track your workouts</li>
+          <li>Book classes and trainers</li>
+          <li>Manage your membership</li>
+        </ul>
+      </div>
+    </section>
 
-    <h1>POWER GYM</h1>
-    <h2>Welcome Back!</h2>
-    <p>Login to your gym account</p>
+    <section class="panel">
+      <form id="loginForm" class="card" novalidate>
+        <h2>Welcome back</h2>
+        <p class="subtitle">Log in to your member account</p>
 
-    <form action="#" method="post">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <small class="error" id="emailError"></small>
+        </div>
 
-        <label for="email">Email Address:</label>
-        <br>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-        >
-        <br><br>
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input type="password" id="password" name="password" placeholder="At least 6 characters" autocomplete="current-password" required />
+            <button type="button" id="togglePassword" class="toggle" aria-label="Show password">Show</button>
+          </div>
+          <small class="error" id="passwordError"></small>
+        </div>
 
-        <label for="password">Password:</label>
-        <br>
-        <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Enter your password"
-            required
-        >
-        <br><br>
+        <div class="row">
+          <label class="remember">
+            <input type="checkbox" id="remember" /> Remember me
+          </label>
+          <a href="#" class="link">Forgot password?</a>
+        </div>
 
-        <input type="checkbox" id="remember" name="remember">
-        <label for="remember">Remember me</label>
+        <button type="submit" class="btn">Log in</button>
+        <p class="form-message" id="formMessage" role="status"></p>
 
-        <br><br>
+        <p class="signup">New member? <a href="#" class="link">Create an account</a></p>
+      </form>
+    </section>
+  </main>
 
-        <a href="#">Forgot Password?</a>
-
-        <br><br>
-
-        <button type="submit">Login</button>
-
-    </form>
-
-    <p>
-        Don't have an account?
-        <a href="signup.html">Sign Up</a>
-    </p>
-
-    <footer>
-        <p>© 2026 Power Gym. All rights reserved.</p>
-    </footer>
-
+  <script src="style.css"></script>
 </body>
 </html>
